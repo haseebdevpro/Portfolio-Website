@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navigation section -->
+    <header class="header">
+      <div class="navbar">
+        <a href="#" class="nav-logo">Portfolio</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--Hero section -->
+    <section class="hero" id="home">
+      <h1 class="anim">
+        <span>Hi, I'm Haseeb Shoaib</span> <br /><span id="main-head"
+          >Frontend Developer</span
+        >
+      </h1>
+      <p class="anim">I create engaging and responsive websites.</p>
+      <button class="hire-btn anim">Hire Me</button>
+    </section>
+    <!-- About Section -->
+    <secion class="about" id="about">
+      <div class="about-container">
+        <img src="profile.jpg" alt="Profile" class="profile-img anim" />
+        <div class="about-text anim">
+          <h2>About Me</h2>
+          <p>
+            I'm a frontend developer with a passion for building intuitive and
+            dynamic user experiences.
+          </p>
+          <p>I have expertise in HTML, CSS, and JavaScript.</p>
+          <h4>Skills</h4>
+          <div class="skill-bar">
+            <span>Html</span>
+            <div class="bar html"></div>
+          </div>
+          <div class="skill-bar">
+            <span>Css</span>
+            <div class="bar css"></div>
+          </div>
+          <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="bar js"></div>
+          </div>
+        </div>
+      </div>
+    </secion>
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="card">
+          <img src="cal.png" alt="" />
+          <h3>Project One</h3>
+          <p>Created Calculaor Using HTML CSS and Js</p>
+          <button>View Code</button>
+          <button>Live Demo</button>
+        </div>
+        <div class="card">
+          <img src="cunverter.png" />
+          <h3>Project Two</h3>
+          <p>Created Currency Converter app Using API</p>
+          <button>View Code</button>
+          <button>Live Demo</button>
+        </div>
+        <div class="card">
+          <img src="todo.png" alt="" />
+          <h3>Project Three</h3>
+          <p>Created Todo App Using HTML CSS and Js</p>
+          <button>View Code</button>
+          <button>Live Demo</button>
+        </div>
+      </div>
+    </section>
+    <!-- Contact saction -->
+    <section class="contact" id="contact">
+      <form
+        action="https://formsubmit.co/shoaibhaseeb758@gmail.com"
+        method="POST"
+        class="contact-form input-layout card"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <h2>Contact Us</h2>
+        <input
+          type="text"
+          class="input-layout"
+          placeholder="Enter Name"
+          required
+          name="name"
+        />
+        <input
+          type="email"
+          class="input-layout"
+          placeholder="Enter Email"
+          required
+          name="email"
+        />
+        <input
+          type="password"
+          class="input-layout"
+          placeholder="Enter password"
+          required
+          name="password"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Haseeb Shoaib</h3>
+        <p>Frontend Developer passionate about building engaging websites.</p>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Haseeb Shoaib | Designed with ❤️</p>
+      </div>
+    </footer>
+  </body>
+</html>

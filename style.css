@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 20px 40px;
+  background-color: #f5fafa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.nav-logo {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(45deg, #00b894, #3498db);
+  padding: 4px 6px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.nav-logo:hover {
+  background: linear-gradient(45deg, #3498db, #00b894);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: all 0.3s;
+  position: relative;
+}
+.nav-links li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: linear-gradient(45deg, #00b894, #3498db);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transition: 0.5s;
+}
+.nav-links li a:hover:after {
+  width: 100%;
+}
+/*Hero section styles */
+.hero {
+  padding: 80px 40px;
+  text-align: left;
+  background-color: #f5fafa;
+}
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.hero span {
+  font-size: 30px;
+  color: black;
+}
+.hero h1 #main-head {
+  background: linear-gradient(to right, #00b894, #3498db);
+  background-clip: text;
+  color: transparent;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  animation-delay: 0.5s;
+}
+.hire-btn {
+  background: linear-gradient(45deg, #00b894, #3498db);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.hire-btn:hover {
+  border-top-right-radius: 30px;
+}
+.hire-btn.anim {
+  animation-delay: 1s;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(219, 219, 219);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #00b894, #3498db);
+}
+/* About section styles */
+.about {
+  padding: 60px 40px;
+  background-color: #f5fafa;
+}
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 100%;
+}
+.profile-img {
+  width: 230px;
+  height: 230px;
+  background-size: cover;
+  border-radius: 50%;
+}
+.profile-img.anim {
+  animation-delay: 1.3s;
+}
+.about-text {
+  max-width: 55%;
+}
+.about-text p {
+  font-size: 18px;
+}
+.about-text.anim {
+  animation-delay: 1.7s;
+}
+.skill-bar {
+  margin: 10px 0;
+}
+.skill-bar span {
+  display: block;
+  font-weight: 530;
+}
+.bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 5px;
+}
+.bar::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: #1e8e81;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+}
+.bar.html::after {
+  width: 98%;
+}
+.bar.css::after {
+  width: 95%;
+}
+.bar.js::after {
+  width: 85%;
+}
+/* Projects section styles */
+.projects {
+  padding: 60px 40px;
+  background-color: #f5fafa;
+  text-align: center;
+}
+.projects h2 {
+  margin-bottom: 16px;
+}
+.projects p {
+  font-size: 1rem;
+}
+
+.project-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 20px 20px 60px #00000041, inset -20px -20px 15pxpx #ffffff40;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: translateY(-9px);
+  transform: scale(1.1);
+}
+img {
+  background-size: cover;
+  width: 100%;
+  height: 120px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.card button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  color: #1e8e81;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.card button:hover {
+  background-color: #ff4006;
+  box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+  border: none;
+  color: #fff;
+  transform: translateY(-5px);
+}
+/* Contact saction */
+.contact {
+  padding: 60px 40px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.contact h2 {
+  margin-bottom: 10px;
+}
+.input-layout {
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #e3b1c6, -10px -10px 20px #ffffff;
+}
+.input-layout inset {
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: inset 10px 20px #e3b1c6, inset -10px -10px 20px #ffffff;
+}
+.contact-form {
+  padding: 30px;
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.contact-form input {
+  width: 70%;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: width 0.7s ease-in-out;
+}
+.contact-form input:focus {
+  width: 100%;
+}
+.contact-form button {
+  padding: 10px;
+  background-color: #1e8e81;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.contact-form button:hover {
+  background-color: #ff4006;
+  box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+  color: #fff;
+  transform: translateY(-5px);
+}
+::placeholder {
+  color: #1e8e81;
+}
+/* Animation Effect */
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* footer section style */
+.footer {
+  background: linear-gradient(45deg, #00b894, #3498db);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+.footer h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.socials li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transform: all 0.5s ease;
+}
+.socials li a:hover {
+  transform: scale(1.3);
+  color: #000;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  font-size: 13px;
+  padding-top: 10px;
+}
